@@ -1,0 +1,18 @@
+doctype html
+html
+    head
+        meta(charset='UTF-8')
+        link(rel='stylesheet', href='/css/bulma.css')
+    body
+        div.container
+            form(id="loginForm", action="/jira/login", method="post")
+                div.field
+                    label.label Correo
+                    input#correo(type="email", name="email", class="input is-hovered", placeholder="Favor de agregar correo")
+                div.field
+                    label.label Password
+                    input#correo(type="password", name="password", class="input is-hovered", placeholder="Password")
+                div.field
+                    button(type="submit",class="button is-link") Log In
+    script(src='/js/jquery.min.js')
+    script(src='/src/client.js')
